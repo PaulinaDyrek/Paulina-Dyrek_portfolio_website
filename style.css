@@ -180,21 +180,28 @@ header {
   width: 40vw;
   background-color: #11010b;
   border-radius: 20px;
-  color: fff;
+  color: #fff;
   border: 2px solid var(--main-color);
 }
 .skills-part h1 {
   color: var(--main-color);
   text-align: center;
+  margin: 10px 0 20px;
 }
+.skills-column {
+  display: flex;
+}
+
 .skills-part p {
   font-size: 20px;
-  /* text-align: center; */
   padding: 5px 5px;
 }
 .material-symbols-outlined {
   margin: 5px 10px;
   color: #fff;
+}
+.column {
+  flex: 50%;
 }
 
 @keyframes slideRight {
