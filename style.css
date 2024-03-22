@@ -203,7 +203,16 @@ header {
 .column {
   flex: 50%;
 }
-
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 @keyframes slideRight {
   0% {
     opacity: 0;

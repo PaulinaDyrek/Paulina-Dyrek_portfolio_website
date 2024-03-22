@@ -35,7 +35,7 @@
       </div>
       <img class="profile-img" src="/img/photo.png" alt="profile-image" />
     </section>
-    <section class="about" id="about">
+    <section class="about reveal" id="about ">
       <img class="about-img" src="/img/photo.png" alt="profile image" />
       <div class="about-text">
         <h2>About<span>Me</span></h2>
@@ -55,7 +55,7 @@
         >
       </div>
     </section>
-    <section id="skills" class="skills">
+    <section id="skills" class="skills reveal">
       <div class="skills-title">
         <h1>my<span>SKILLS</span></h1>
       </div>
@@ -123,5 +123,21 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+          } else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+    </script>
   </body>
 </html>
