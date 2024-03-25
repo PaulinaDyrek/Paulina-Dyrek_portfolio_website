@@ -407,7 +407,6 @@ footer {
   font-weight: 400;
   margin: 0px 5px;
 }
-/* //////////////////////////////////////////////////////////////// */
 @media (min-width: 1025px) and (max-width: 1300px) {
   .home-content h3 {
     font-size: 28px;
@@ -475,47 +474,30 @@ footer {
 /* //////////////////////////////////////// */
 @media (min-width: 769px) and (max-width: 1024px) {
   header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: #1c0613;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    padding: 15px 10%;
   }
   .logo {
-    position: relative;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-  }
-  .logo::first-letter {
-    color: var(--main-color);
-  }
-  .d {
-    color: var(--main-color);
+    font-size: 20px;
   }
   .navbar a {
-    display: inline-block;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 0.5s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
+    font-size: 18px;
   }
-  .navbar a:hover {
-    color: var(--main-color);
+  .home-content {
+    max-width: 500px;
+  }
+  .home-content h3 {
+    font-size: 28px;
+  }
+  .home-content h1 {
+    font-size: 50px;
+  }
+  .home-content p {
+    font-size: 22px;
+  }
+  .profile-img {
+    right: 3%;
+    width: 290px;
+    height: 290px;
   }
 }
 
