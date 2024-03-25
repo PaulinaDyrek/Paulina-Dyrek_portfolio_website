@@ -148,12 +148,11 @@ header {
   margin: 15px 0 30px;
 }
 .about-text p {
-  color: aliceblue;
+  color: #fff;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 4rem;
 }
-
 .skills {
   display: flex;
   flex-direction: column;
@@ -177,8 +176,8 @@ header {
 }
 .skills-part {
   padding: 20px 20px;
-  width: 40vw;
-  min-height: 40vh;
+  width: 550px;
+  height: 250px;
   background-color: #11010b;
   border-radius: 20px;
   color: #fff;
@@ -409,7 +408,115 @@ footer {
   margin: 0px 5px;
 }
 /* //////////////////////////////////////////////////////////////// */
-@media screen and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1300px) {
+  .home-content h3 {
+    font-size: 28px;
+  }
+  .home-content h1 {
+    font-size: 45px;
+  }
+  .home-content p {
+    font-size: 20px;
+  }
+  .profile-img {
+    right: 15%;
+    width: 350px;
+    height: 350px;
+  }
+  .btn-box {
+    padding: 12px 20px;
+  }
+  .about-img {
+    max-width: 350px;
+  }
+  .about-text h2 {
+    font-size: 40px;
+  }
+  .about-text h4 {
+    font-size: 20px;
+  }
+  .about-text p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+  .skills-title {
+    margin: 0 0 50px 0;
+    font-size: 25px;
+  }
+  .skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .skills-part {
+    padding: 10px 10px;
+    width: 450px;
+  }
+  .skills-part p {
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+  .portfolio-container {
+    padding-top: 80px;
+  }
+  .portfolio-title p {
+    font-size: 20px;
+  }
+  .portfolio-title h1 {
+    font-size: 38px;
+  }
+  .project {
+    height: 450px;
+    width: 300px;
+  }
+}
+/* //////////////////////////////////////// */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #1c0613;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  .logo::first-letter {
+    color: var(--main-color);
+  }
+  .d {
+    color: var(--main-color);
+  }
+  .navbar a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+  }
+  .navbar a:hover {
+    color: var(--main-color);
+  }
 }
 
 @keyframes slideRight {
