@@ -43,7 +43,7 @@ header {
 }
 .navbar a {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -253,7 +253,7 @@ header {
   justify-content: center;
   margin-bottom: 150px;
   min-height: 70vh;
-  width: 300px;
+  width: 330px;
   background-color: #11010b;
   border-radius: 20px;
   color: #fff;
@@ -303,7 +303,6 @@ header {
   position: absolute;
   background-color: #c1b8c338;
   backdrop-filter: blur(5px);
-  border-radius: 20px;
   transition: 2s;
 }
 .project:hover .technology {
@@ -323,22 +322,94 @@ header {
   color: var(--main-color);
   text-transform: uppercase;
 }
-.main-contact {
-  display: flex;
-  justify-content: space-around;
+.main-contact a {
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  font-size: 30px;
+  color: var(--main-color);
+  text-decoration: none;
+  margin: 50px 25px 50px 0;
+  transition: 1s;
 }
-.contact-form {
-  width: 350px;
-  height: 120px;
-  border: 1px solid white;
-  border-radius: 10px;
-  box-shadow: -14px -13px 32px -10px rgb(239, 230, 237);
-  background-color: rgb(239, 230, 237);
-  opacity: 0.7;
+.main-contact a:hover {
+  background: var(--main-color);
   color: #11010b;
+  box-shadow: 0 0 20 var(--main-color);
+}
+footer {
+  background-color: rgb(24, 24, 24);
+}
+.footer-container {
+  width: 100%;
+  padding: 40px 20px 20px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 8px;
+  transition: 0.5s;
+}
+.social-icons a:hover {
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+.social-icons a i {
+  padding: 5px 5px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.footer-nav a {
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 20px;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footer-nav a:hover {
+  opacity: 1;
+  color: #fff;
+}
+.line {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copyrights {
+  text-align: center;
+  font-size: 14px;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/* //////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 1200px) {
 }
 
 @keyframes slideRight {
