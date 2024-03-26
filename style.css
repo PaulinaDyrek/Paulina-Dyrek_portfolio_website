@@ -1,5 +1,6 @@
 :root {
-  --main-color: rgb(181, 73, 160);
+  --main-color: #87a67c;
+  --second-color: #030907;
 }
 * {
   margin: 0;
@@ -10,7 +11,7 @@
 }
 body {
   color: #ededed;
-  background: #11010b;
+  background: var(--second-color);
 }
 
 header {
@@ -19,7 +20,7 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: #1c0613;
+  background: #0b221a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,9 +62,6 @@ header {
   width: 100%;
   height: 100vh;
   justify-content: space-between;
-  background: url(/img/wallpaper.png) no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   padding: 70px 10% 0;
@@ -75,12 +73,14 @@ header {
 .home-content h3 {
   font-size: 36px;
   font-weight: 700;
+  color: #fff;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
 }
 .home-content h1 {
   font-size: 62px;
   font-weight: 700;
+  color: #fff;
   margin: -3px 0;
   opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -88,6 +88,7 @@ header {
 }
 .home-content p {
   font-size: 24px;
+  color: #fff;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
@@ -106,7 +107,7 @@ header {
   background: var(--main-color);
   border-radius: 40px;
   font-size: 16px;
-  color: #11010b;
+  color: var(--second-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
@@ -178,7 +179,7 @@ header {
   padding: 20px 20px;
   width: 550px;
   height: 250px;
-  background-color: #11010b;
+  background-color: var(--second-color);
   border-radius: 20px;
   color: #fff;
   border: 2px solid var(--main-color);
@@ -253,7 +254,7 @@ header {
   margin-bottom: 150px;
   min-height: 70vh;
   width: 330px;
-  background-color: #11010b;
+  background-color: var(--second-color);
   border-radius: 20px;
   color: #fff;
   border: 2px solid var(--main-color);
@@ -280,7 +281,7 @@ header {
   background: var(--main-color);
   border-radius: 40px;
   font-size: 16px;
-  color: #11010b;
+  color: var(--second-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
@@ -338,7 +339,7 @@ header {
 }
 .main-contact a:hover {
   background: var(--main-color);
-  color: #11010b;
+  color: var(--second-color);
   box-shadow: 0 0 20 var(--main-color);
 }
 footer {
@@ -354,12 +355,12 @@ footer {
   align-items: center;
 }
 .social-icons a {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background: transparent;
   border: 2px solid #fff;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -376,11 +377,11 @@ footer {
 .footer-nav {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .footer-nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 20px;
   color: #fff;
   opacity: 0.7;
@@ -398,7 +399,7 @@ footer {
 }
 .copyrights {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 .designer {
   opacity: 0.7;
