@@ -12,3 +12,17 @@ function reveal() {
     }
   }
 }
+
+document.querySelector('.toggle-btn').onclick = function () {
+  document.querySelector('.dropdown-menu').classList.toggle('open');
+  const isOpen = document
+    .querySelector('.dropdown-menu')
+    .classList.contains('open');
+  if (isOpen) {
+    document.querySelector('.toggle-btn').innerHTML =
+      '<i class="fas fa-times"></i>';
+  } else {
+    document.querySelector('.toggle-btn').innerHTML =
+      '<i class="fas fa-bars"></i>';
+  }
+};

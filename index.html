@@ -10,10 +10,11 @@
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;300;400&family=Quicksand&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:wght@300&display=swap');
+      </style>
     <title>Paulina Dyrek - portfolio</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;300;400&family=Quicksand&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:wght@300&display=swap');
-    </style>
   </head>
   <body>
     <header class="header">
@@ -27,6 +28,14 @@
         <a href="#portfolio" style="--i: 4">Portfolio</a>
         <a href="#contact" style="--i: 5">Contact</a>
       </nav>
+      <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+      <div class="dropdown-menu">
+        <a href="#" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#skills" style="--i: 3">Skills</a>
+        <a href="#portfolio" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </div>
     </header>
     <section class="home">
       <div class="home-content">
@@ -36,10 +45,10 @@
         <p>Junior Fronted Developer</p>
         <a href="#about" class="btn-box">More About Me</a>
       </div>
-      <img class="profile-img" src="/img/photo_2.png" alt="profile-image" />
+      <img class="profile-img" src="/img/photo.png" alt="profile-image" />
     </section>
     <section class="about reveal" id="about">
-      <img class="about-img" src="/img/photo_2.png" alt="profile image" />
+      <img class="about-img" src="/img/photo.png" alt="profile image" />
       <div class="about-text">
         <h2>About<span>Me</span></h2>
         <h4>Frontend Developer</h4>
@@ -146,6 +155,7 @@
             <div class="technology">
               <img src="/img/nextjs.png" alt="" class="tech-logo" />
               <img src="/img/sass.png" alt="" class="tech-logo" />
+              <img src="/img/js.png" alt="logo icon" class="tech-logo" />
             </div>
           </div>
         </div>
