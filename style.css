@@ -70,7 +70,7 @@ header {
   top: 60px;
   width: 300px;
   height: 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(60, 60, 60, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -83,7 +83,7 @@ header {
   top: 60px;
   width: 300px;
   height: 300px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(60, 60, 60, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -877,13 +877,14 @@ footer {
     font-size: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 425px) {
+
+@media (min-width: 425px) and (max-width: 768px) {
   .navbar {
     display: none;
   }
   .toggle-btn {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     display: block;
   }
@@ -902,7 +903,7 @@ footer {
   .home {
     position: relative;
     width: 100%;
-    min-height: 150%;
+    min-height: 100vh;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -914,7 +915,7 @@ footer {
     position: absolute;
     top: 70%;
     max-width: 90%;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .home-content h3 {
     font-size: 28px;
@@ -1024,13 +1025,13 @@ footer {
     font-size: 10px;
   }
 }
-
-@media (min-width: 426px) and (max-width: 768px) {
+@media (max-width: 425px) {
+  .navbar {
+    display: none;
+  }
   .toggle-btn {
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
     display: block;
+    font-size: 1.5rem;
   }
   .dropdown-menu.open {
     right: 5%;
@@ -1044,39 +1045,28 @@ footer {
     font-size: 22px;
     animation: slideLeft 2s ease forwards;
   }
-  .home {
-    position: relative;
-    width: 100%;
-    min-height: 150%;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 70px 10% 0;
-    margin-bottom: 200px;
-  }
   .home-content {
     position: absolute;
     top: 70%;
     max-width: 90%;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .home-content h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .home-content h1 {
-    font-size: 46px;
+    font-size: 40px;
   }
   .home-content p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .profile-img {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
   }
   .btn-box {
@@ -1085,6 +1075,7 @@ footer {
   .about {
     display: flex;
     flex-direction: column;
+    margin-top: 250px;
   }
   .about-img {
     display: none;
@@ -1108,16 +1099,15 @@ footer {
   }
   .skills-part {
     padding: 10px 10px;
-    width: 320px;
+    width: 300px;
     height: 400px;
   }
   .skills-column {
     display: flex;
     flex-direction: column;
   }
-
   .skills-part p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .portfolio-container {
     padding-top: 10px;
@@ -1125,7 +1115,7 @@ footer {
   .portfolio-title p {
     color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
   .portfolio-title h1 {
     font-size: 38px;
@@ -1135,6 +1125,7 @@ footer {
   }
   .project {
     margin-bottom: 10px;
+    width: 300px;
   }
   .project-img {
     height: 300px;
@@ -1146,9 +1137,9 @@ footer {
     margin-top: 80px;
   }
   .main-contact a {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
   footer {
     background-color: rgb(24, 24, 24);
@@ -1159,7 +1150,9 @@ footer {
   }
   .footer-nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 15px 5px;
   }
   .footer-nav a {
@@ -1169,6 +1162,7 @@ footer {
     font-size: 10px;
   }
 }
+
 @keyframes slideRight {
   0% {
     opacity: 0;
