@@ -27,6 +27,11 @@ document.querySelector('.toggle-btn').onclick = function () {
   }
 };
 
+document.querySelectorALL('a').forEach((n) =>
+  n.addEventListener('click', () => {
+    document.querySelector('.dropdown-menu').classList.remove('open');
+  })
+);
 // document.querySelector('.dropdown-menu').onclick = function () {
 //   document.querySelector('.dropdown-menu.open').classList.toggle('close');
 //   const isClose = document
