@@ -1,7 +1,7 @@
 # Paulina's Portfolio Website
 
 ## Introduction
-Welcome to [Your Name]'s portfolio website! 
+Welcome to my portfolio website! 
 This websiteserves as a showcase of my projects, skills, and experiences in Frontend Developer. 
 Whether you're a potential employer, collaborator, or just someone interested in what I do, I hope you find something interesting here.
 
