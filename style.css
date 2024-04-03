@@ -102,6 +102,9 @@ header {
 .dropdown-menu a:hover {
   color: var(--main-color);
 }
+.dropdown-menu.close {
+  display: none;
+}
 .home {
   position: relative;
   width: 100%;
@@ -455,10 +458,10 @@ footer {
 }
 @media (min-width: 1025px) and (max-width: 1300px) {
   .home-content h3 {
-    font-size: 28px;
+    font-size: 33px;
   }
   .home-content h1 {
-    font-size: 45px;
+    font-size: 55px;
   }
   .home-content p {
     font-size: 20px;
@@ -541,9 +544,9 @@ footer {
     font-size: 22px;
   }
   .profile-img {
-    right: 3%;
-    width: 290px;
-    height: 290px;
+    right: 4%;
+    width: 300px;
+    height: 300px;
   }
   .about-img {
     max-width: 250px;
@@ -909,13 +912,13 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 70px 10% 0;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
   }
   .home-content {
     position: absolute;
-    top: 70%;
+    top: 50%;
     max-width: 90%;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .home-content h3 {
     font-size: 28px;
@@ -928,7 +931,7 @@ footer {
   }
   .profile-img {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 250px;
@@ -941,6 +944,7 @@ footer {
   .about {
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
   }
   .about-img {
     display: none;
@@ -1047,9 +1051,10 @@ footer {
   }
   .home-content {
     position: absolute;
-    top: 70%;
+    top: 50%;
+
     max-width: 90%;
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .home-content h3 {
     font-size: 24px;
@@ -1062,11 +1067,11 @@ footer {
   }
   .profile-img {
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
   }
   .btn-box {
@@ -1075,7 +1080,6 @@ footer {
   .about {
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
   }
   .about-img {
     display: none;

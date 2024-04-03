@@ -26,3 +26,15 @@ document.querySelector('.toggle-btn').onclick = function () {
       '<i class="fas fa-bars"></i>';
   }
 };
+
+// document.querySelector('.dropdown-menu').onclick = function () {
+//   document.querySelector('.dropdown-menu.open').classList.toggle('close');
+//   const isClose = document
+//     .querySelector('.dropdown-menu.open.close')
+//     .classList.contains('close');
+//   if (isClose) {
+//     document.querySelector('.toggle-btn').innerHTML =
+//       '<i class="fas fa-bars"></i>';
+//     document.querySelector('.dropdown-menu').classList.toggle('open');
+//   }
+// };
