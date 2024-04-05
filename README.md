@@ -29,4 +29,4 @@ If you'd like to get in touch with me, whether it's about a potential job opport
 * LinkedIn: https://linkedin.com/in/paulina-dyrek
 * GitHub: https://github.com/PaulinaDyrek
 
-## Visit : paulinadyrek.pl
+## Visit : [www.paulinadyrek.pl]
